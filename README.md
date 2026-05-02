@@ -1,7 +1,23 @@
-Predictive Maintenance using NASA C-MAPSS Dataset
-This project focuses on predicting the Remaining Useful Life (RUL) of turbofan engines using the NASA C-MAPSS dataset. It includes data processing, model training, and basic analysis related to predictive maintenance.
+# RUL Prediction using CNN–Attention–LSTM (C-MAPSS)
 
-Goal
-Load and explore the C-MAPSS dataset
-Predict engine Remaining Useful Life (RUL)
-Prepare a basic workflow for predictive maintenance models
+## Overview
+This project focuses on predicting the **Remaining Useful Life (RUL)** of turbofan engines using the NASA **C-MAPSS dataset**, a benchmark problem in predictive maintenance.
+
+We compare:
+- **Baseline:** LSTM model  
+- **Variant:** CNN–Attention–LSTM model  
+
+The goal is to evaluate how architectural changes (CNN + Attention) improve performance over standard sequence modeling.
+
+---
+
+## Dataset
+
+- Dataset: NASA C-MAPSS (FD001 subset)
+- Source: https://phm-datasets.s3.amazonaws.com/NASA/6.+Turbofan+Engine+Degradation+Simulation+Data+Set.zip
+
+### Description
+- Multivariate time-series data
+- 21 sensor measurements + 3 operational settings
+- Task: Predict RUL (number of cycles before failure)
+
