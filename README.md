@@ -49,8 +49,13 @@ Checkpoints are downloaded automatically from Google Drive on first run. All fig
 CNN-Attention-LSTM
 %run reproduce_results.py
 
-Stacked LSTM
+LSTM
 %run reproduce_results_lstm.py
 
 References and results are included in the report submitted in gradescope.
+
+For the three different scenarios of RUL and sequence length, use the following files.
+
+reproduce_results_lstm_Copy1.py RUL = 110 seq_len = 25
+reproduce_results_lstm_Copy2.py RUL = 100 seq_len = 20
 
