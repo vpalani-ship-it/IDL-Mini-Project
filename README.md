@@ -21,3 +21,36 @@ The goal is to evaluate how architectural changes (CNN + Attention) improve perf
 - 21 sensor measurements + 3 operational settings
 - Task: Predict RUL (number of cycles before failure)
 
+Reproducing Results
+
+1. Install dependencies
+For CNN-Attention-LSTM (PyTorch):
+bashpip install torch numpy pandas scikit-learn matplotlib gdown
+
+For LSTM (TensorFlow):
+bashpip install tensorflow numpy pandas scikit-learn matplotlib gdown
+
+2. Run the reproduce scripts
+
+CNN-Attention-LSTM:
+bashpython reproduce_results.py
+
+Stacked LSTM:
+
+bashpython reproduce_results_lstm.py
+
+Checkpoints are downloaded automatically from Google Drive on first run. All figures are saved to ./figures/.
+
+3. Run in Jupyter Notebook
+
+python# Cell 1
+!pip install torch tensorflow numpy pandas scikit-learn matplotlib gdown
+
+# Cell 2 — CNN-Attention-LSTM
+%run reproduce_results.py
+
+# Cell 3 — Stacked LSTM
+%run reproduce_results_lstm.py
+
+References and results are included in the report submitted in gradescope.
+
