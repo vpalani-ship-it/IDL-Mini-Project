@@ -43,13 +43,13 @@ Checkpoints are downloaded automatically from Google Drive on first run. All fig
 
 3. Run in Jupyter Notebook
 
-python# Cell 1
+
 !pip install torch tensorflow numpy pandas scikit-learn matplotlib gdown
 
-# Cell 2 — CNN-Attention-LSTM
+CNN-Attention-LSTM
 %run reproduce_results.py
 
-# Cell 3 — Stacked LSTM
+Stacked LSTM
 %run reproduce_results_lstm.py
 
 References and results are included in the report submitted in gradescope.
